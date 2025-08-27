@@ -1,80 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linux Command Generator</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <header class="main-header">
-        <div class="container header-container">
-            <div>
-                <h1>Linux Command Generator</h1>
-                <p class="subtitle">Easily build and explore commands for any distro</p>
-            </div>
-            <button id="theme-toggle" class="btn-icon">
-                <i class="fas fa-sun"></i>
-            </button>
-        </div>
-    </header>
-
-    <main id="app" class="container">
-        <div id="generator">
-            <!-- Command Selection -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Select a Command</h2>
-                </div>
-                <div class="card-body">
-                    <select id="command-select" class="form-control">
-                        <option value="">--Please choose a command--</option>
-                        <!-- Options will be populated by JavaScript -->
-                    </select>
-                </div>
-            </div>
-
-            <!-- Command Options -->
-            <div id="command-options-container" class="card" style="display: none;">
-                <div class="card-header">
-                    <h2 id="options-title"></h2>
-                </div>
-                <div id="command-options" class="card-body">
-                    <!-- Options (checkboxes/inputs) will be populated by JavaScript -->
-                </div>
-            </div>
-
-            <!-- Generated Command -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Generated Command</h2>
-                </div>
-                <div class="card-body">
-                    <pre><code id="generated-command" class="code-block"></code></pre>
-                    <button id="copy-button" class="btn">Copy to Clipboard</button>
-                </div>
-            </div>
-
-            <!-- Command Examples -->
-            <div id="command-examples-container" class="card" style="display: none;">
-                <div class="card-header">
-                    <h2 id="examples-title"></h2>
-                </div>
-                <div id="command-examples" class="card-body">
-                    <!-- Examples will be populated by JavaScript -->
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2025 Pinak Dhabu. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

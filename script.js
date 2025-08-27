@@ -1,4 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Theme switching logic
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    const themeIcon = themeToggle.querySelector('i');
+
+    const applyTheme = (theme) => {
+        body.dataset.theme = theme;
+        themeIcon.className = theme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
+        localStorage.setItem('theme', theme);
+    };
+
+    const preferredTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    applyTheme(preferredTheme);
+
+    themeToggle.addEventListener('click', () => {
+        const newTheme = body.dataset.theme === 'dark' ? 'light' : 'dark';
+        applyTheme(newTheme);
+    });
+
+
+    // Command generator logic
     const commands = [
         {
             name: 'ls',

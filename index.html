@@ -1,34 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Page description">
-  <meta name="author" content="Author Name">
-  <link rel="icon" href="/favicon.ico">
-  <title>Hello!</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Command Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Example for icons, might change -->
 </head>
 <body>
-  <header>
-    <nav>
-      <!-- Navbar -->
-    </nav>
-  </header>
+    <header class="main-header">
+        <div class="container">
+            <h1>Linux Command Generator</h1>
+            <p class="subtitle">Easily build and explore commands for any distro</p>
+        </div>
+    </header>
 
-  <main>
-    <section>
-      <h1>Hello, world!</h1>
-      <p>Welcome to my new page.</p>
-    </section>
-  </main>
+    <main id="app" class="container">
+        <div id="generator">
+            <!-- Command Selection -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Select a Command</h2>
+                </div>
+                <div class="card-body">
+                    <select id="command-select" class="form-control">
+                        <option value="">--Please choose a command--</option>
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+                </div>
+            </div>
 
-  <footer>
-    <p>&copy; 2025 Pinak Dhabu</p>
-  </footer>
-  <script src="script.js"></script>
+            <!-- Command Options -->
+            <div id="command-options-container" class="card" style="display: none;">
+                <div class="card-header">
+                    <h2 id="options-title"></h2>
+                </div>
+                <div id="command-options" class="card-body">
+                    <!-- Options (checkboxes/inputs) will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Generated Command -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Generated Command</h2>
+                </div>
+                <div class="card-body">
+                    <pre><code id="generated-command" class="code-block"></code></pre>
+                    <button id="copy-button" class="btn">Copy to Clipboard</button>
+                </div>
+            </div>
+
+            <!-- Command Examples -->
+            <div id="command-examples-container" class="card" style="display: none;">
+                <div class="card-header">
+                    <h2 id="examples-title"></h2>
+                </div>
+                <div id="command-examples" class="card-body">
+                    <!-- Examples will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Pinak Dhabu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

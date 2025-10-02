@@ -1,14 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CryptoVault - Enterprise Encryption Suite</title>
-    <meta name="description" content="Enterprise-grade encryption and decryption platform with military-level security. Encrypt and decrypt your data with advanced algorithms like AES-256, RSA-2048, and more." />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Cipher Tool</h1>
+        <div class="tool">
+            <div class="input-section">
+                <textarea id="inputText" placeholder="Enter text here..."></textarea>
+            </div>
+            <div class="controls">
+                <select id="algorithm">
+                    <option value="caesar">Caesar Cipher</option>
+                    <option value="atbash">Atbash Cipher</option>
+                    <option value="sha256">SHA-256 Hash</option>
+                    <option value="aes">AES Encryption</option>
+                </select>
+                <button id="encryptBtn">Encrypt</button>
+                <button id="decryptBtn">Decrypt</button>
+            </div>
+            <div id="key-container" class="key-input-container" style="display: none;">
+                <input type="password" id="keyInput" placeholder="Secret Key for AES">
+            </div>
+            <div class="output-section">
+                <textarea id="outputText" placeholder="Result..." readonly></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>

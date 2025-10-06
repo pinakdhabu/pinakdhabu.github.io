@@ -2,9 +2,6 @@
 
 CryptoVault is a modern, client-side web application that provides a suite of tools for encrypting, decrypting, and hashing text. It leverages powerful, industry-standard cryptographic libraries to perform all operations directly in your browser, ensuring that your data remains private and never leaves your machine.
 
-![CryptoVault Screenshot](https://github.com/user-attachments/assets/55e60517-e81a-4f5b-81e0-59f6e522964b)
-
-
 ## ✨ Features
 
 - **Multiple Algorithms:** Supports a wide range of cryptographic algorithms to suit various security needs.

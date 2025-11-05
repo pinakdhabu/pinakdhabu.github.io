@@ -81,5 +81,8 @@ The application is structured into two main parts:
 All processing is triggered by user actions in the UI and executed securely within the browser's JavaScript environment.
 
 ---
+## Contributors
+[![Contributors](https://contrib.rocks/image?repo=pinakdhabu/pinakdhabu.github.io)
+---
 
 © 2024 CryptoVault - Enterprise Encryption Platform

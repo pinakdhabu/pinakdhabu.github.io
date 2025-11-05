@@ -82,7 +82,7 @@ All processing is triggered by user actions in the UI and executed securely with
 
 ---
 ## Contributors
-[![Contributors](https://contrib.rocks/image?repo=pinakdhabu/pinakdhabu.github.io)
+![Contributors](https://contrib.rocks/image?repo=pinakdhabu/pinakdhabu.github.io)
 ---
 
 © 2024 CryptoVault - Enterprise Encryption Platform

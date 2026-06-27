@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { personalInfo, socialLinks } from '../data/portfolio';
-import { Send, Mail, MapPin, Github, Linkedin, Twitter, CheckCircle, Loader2 } from 'lucide-react';
+import { Send, Mail, MapPin, Github, Linkedin, Code, CheckCircle, Loader2 } from 'lucide-react';
+import XLogo from './XLogo';
 
 const getSocialIcon = (name: string) => {
   switch (name) {
     case 'github': return Github;
     case 'linkedin': return Linkedin;
-    case 'twitter': return Twitter;
+    case 'x': return XLogo;
+    case 'code': return Code;
     default: return Github;
   }
 };
@@ -88,7 +90,7 @@ const Contact: React.FC = () => {
               <p className="text-sm text-slate-400 mb-3">Social Links</p>
               <div className="flex space-x-3">
                 {socialLinks.map((link) => {
-                  const Icon = getSocialIcon(link.name);
+                  const Icon = getSocialIcon(link.icon);
                   return (
                     <motion.a
                       key={link.name}

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Github, Linkedin, Twitter, Shield, Code, Lock } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Shield, Code, Lock } from 'lucide-react';
+import XLogo from './XLogo';
 import { useTypewriter } from '../hooks/useTypewriter';
 import { personalInfo, socialLinks } from '../data/portfolio';
 
@@ -134,7 +135,8 @@ const Hero: React.FC = () => {
     switch (name) {
       case 'github': return Github;
       case 'linkedin': return Linkedin;
-      case 'twitter': return Twitter;
+      case 'x': return XLogo;
+      case 'code': return Code;
       default: return Github;
     }
   };
@@ -261,7 +263,7 @@ const Hero: React.FC = () => {
 
         <motion.div variants={itemVariants} className="flex items-center justify-center space-x-4">
           {socialLinks.map((link) => {
-            const Icon = getSocialIcon(link.name);
+            const Icon = getSocialIcon(link.icon);
             return (
               <motion.a
                 key={link.name}

@@ -48,9 +48,9 @@ export const personalInfo = {
 };
 
 export const socialLinks: SocialLink[] = [
-  { name: 'GitHub (thepinak503)', url: 'https://github.com/thepinak503', icon: 'github', username: 'thepinak503' },
+  { name: 'GitHub (thepinak503)', url: 'https://github.com/thepinak503', icon: 'code', username: 'thepinak503' },
   { name: 'GitHub (pinakdhabu)', url: 'https://github.com/pinakdhabu', icon: 'github', username: 'pinakdhabu' },
-  { name: 'Twitter', url: 'https://twitter.com/PinakDhabu', icon: 'twitter', username: '@PinakDhabu' },
+  { name: 'X (Twitter)', url: 'https://x.com/PinakDhabu', icon: 'x', username: '@PinakDhabu' },
   { name: 'LinkedIn', url: 'https://linkedin.com/in/pinakdhabu2005', icon: 'linkedin', username: 'pinakdhabu2005' },
 ];
 

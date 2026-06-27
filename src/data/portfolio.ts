@@ -57,7 +57,7 @@ export const socialLinks: SocialLink[] = [
 export const skills: Skill[] = [
   { name: 'React / TypeScript', level: 88, icon: '⚛️', category: 'frontend' },
   { name: 'Kotlin / Android', level: 78, icon: '📱', category: 'mobile' },
-  { name: 'Python', level: 85, icon: '🐍', category: 'backend' },
+  { name: 'C++', level: 85, icon: '⚡', category: 'backend' },
   { name: 'Rust', level: 60, icon: '🦀', category: 'backend' },
   { name: 'Bash / Shell Scripting', level: 92, icon: '🐚', category: 'tools' },
   { name: 'PowerShell', level: 90, icon: '🪟', category: 'tools' },
@@ -170,7 +170,7 @@ export const experiences: Experience[] = [
       'Deployed containerized applications on cloud using Docker and Terraform',
       'Built CI/CD pipelines for automated cloud infrastructure provisioning',
       'Configured Nginx servers with Terraform for production environments',
-      'Developed system health monitoring tools in Python',
+      'Developed system health monitoring tools in C++',
     ],
   },
   {
